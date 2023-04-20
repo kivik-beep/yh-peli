@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>End Page</title>
+  </head>
+  <body>
+    <h1>Game Over!</h1>
+    <p>You ran out of time.</p>
+    <div id="points"></div>
+    <button onclick="restartGame()">To Start</button>
+      <script>
+        function restartGame() {
+          window.location.href = "/";
+        }
+
+        // Retrieve the total points from local storage
+        var totalPoints = localStorage.getItem('totalPoints');
+
+        // Update the points element with the total points
+        document.querySelector('#points').textContent = 'Total Points: ' + totalPoints;
+      </script>
+    </body>
+  </body>
+</html>

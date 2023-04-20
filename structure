@@ -1,0 +1,6 @@
+- project
+  - public
+    - game.js
+    - index.html
+  - server
+    - server.js
