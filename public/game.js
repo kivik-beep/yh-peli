@@ -1,5 +1,7 @@
 let timer;
 let points = 0;
+let factor = 0;
+
 
 window.onload = function() {
   // Check if we are in the game page
@@ -45,7 +47,7 @@ function startTimer(duration, display) {
 function startPointCalculator() {
   // Start adding 10 points every second
   pointInterval = setInterval(() => {
-    points += 10;
+    points += factor * 7;
     updatePoints();
   }, 1000);
 }
@@ -56,12 +58,13 @@ function stopPointCalculator() {
 }
 
 function addMorePoints() {
-  // Add 50 points
-  points += 50;
+  // grow the point factor
+  factor += 1;
   updatePoints();
 }
 
 function updatePoints() {
   document.querySelector('#points').textContent = 'Points: ' + points;
+  document.querySelector('#factor').textContent = 'Factor: ' + factor;
 }
 
