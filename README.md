@@ -34,9 +34,9 @@ Windows:
 
 1. Avaa komentorivi
 
-(2. Lataa Node.js lähdekoodi syöttämällä komento !! Tätä ei tarvitse tehdä, node.js löytyy yh-peli juurikansiosta
+2. Lataa Node.js lähdekoodi syöttämällä komento 
 
-<code>curl -o- https://nodejs.org/dist/v16.13.1/node-v16.13.1.tar.gz | tar -xz</code>)
+<code>curl -o- https://nodejs.org/dist/v16.13.1/node-v16.13.1.tar.gz | tar -xz</code>
 
 3. Siirry kansioon 
 
